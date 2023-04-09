@@ -41,7 +41,7 @@ public class ContactRepositoryImpl implements ContactRepository {
     }
 
     public Contact create(Contact contact) {
-        Long id = contacts.keySet().stream().max(Long::compareTo).get() + 1L;
+        Long id = contacts.keySet().stream().max(Long::compareTo).orElse(0L) + 1L;
         contact.setId(id);
         return contacts.put(id, contact);
     }

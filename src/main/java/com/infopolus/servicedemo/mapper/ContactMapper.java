@@ -2,7 +2,6 @@ package com.infopolus.servicedemo.mapper;
 
 import com.infopolus.servicedemo.dto.ContactDto;
 import com.infopolus.servicedemo.entity.Contact;
-import org.mapstruct.InjectionStrategy;
 import org.mapstruct.Mapper;
 
 import java.util.List;
